@@ -1,0 +1,4 @@
+id,title,difficulty,status,languages,answer,date_solved,field,tags
+1,Multiples of 3 and 5,Easy,solved,"python",233168,2025-08-24,Number Theory,"divisibility,arithmetic"
+2,Even Fibonacci numbers,Easy,todo,"",,,"Combinatorics","recurrence"
+3,Largest prime factor,Medium,todo,"",,,"Number Theory","primes,factorization"
