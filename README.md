@@ -40,7 +40,7 @@ Legend: ✅ solved · ⏳ in progress · ⬜ todo
 
 ---
 
-## Heatmap (1–1000)
+## 📊 Progress Heatmap
 
 The heatmap is a single 40×25 board (1–1000).  
 - Orange = solved  
@@ -48,6 +48,8 @@ The heatmap is a single 40×25 board (1–1000).
 - Gray = todo
 
 ![Project Euler Heatmap](visualizations/heatmap.png)
+
+🔗 [Interactive Archive (clickable heatmap)](https://nghia03092004.github.io/project-euler-mathematical-compendium/visualizations/archive.html)
 
 ---
 
