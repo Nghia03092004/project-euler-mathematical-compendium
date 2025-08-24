@@ -29,12 +29,12 @@ The table below is **auto-generated** from `metadata/problems.csv`.
 Each problem ID links directly to its Project Euler page.
 
 <!-- PROGRESS_TABLE_START -->
-| # | Title | Difficulty | Languages | Status |
-|---:|---|---|---|:---:|
-| [1](https://projecteuler.net/problem=1) | Multiples of 3 and 5 | Easy | python | ✅ |
-| [2](https://projecteuler.net/problem=2) | Even Fibonacci numbers | Easy |  | ⬜ |
-| [3](https://projecteuler.net/problem=3) | Largest prime factor | Medium |  | ⬜ |
-<!-- PROGRESS_TABLE_END -->
+| # | Title | Difficulty | Languages | Status | Notes |
+|---:|---|---:|---|:---:|---|
+| [1](https://projecteuler.net/problem=1) | Multiples of 3 and 5 | Easy | Python | solved | [Folder](solutions/problem-001-multiples-of-3-and-5/) - |
+| [2](https://projecteuler.net/problem=2) | Even Fibonacci numbers | Easy |  | todo | [Euler](https://projecteuler.net/problem=2) - |
+| [3](https://projecteuler.net/problem=3) | Largest prime factor | Medium |  | todo | [Euler](https://projecteuler.net/problem=3) - |
+\3
 
 Legend: ✅ solved · ⏳ in progress · ⬜ todo
 
@@ -49,7 +49,7 @@ The heatmap is a single 40×25 board (1–1000).
 
 ![Project Euler Heatmap](visualizations/heatmap.png)
 
-🔗 [Interactive Archive (clickable heatmap)](https://nghia03092004.github.io/project-euler-mathematical-compendium/visualizations/archive.html)
+🔗 Interactive archive: https://Nghia03092004.github.io/project-euler-mathematical-compendium/visualizations/archive.html
 
 ---
 
