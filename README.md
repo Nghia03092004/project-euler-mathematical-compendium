@@ -1,37 +1,60 @@
-# 📚 Project Euler Mathematical Compendium
+# Project Euler Mathematical Compendium
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Solved-0%2F900-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Languages-Python%2FC++%2FJulia-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Math-NumberTheory%2CCombinatorics%2CAlgebra-purple?style=for-the-badge" />
-</p>
+[![Solved](https://img.shields.io/badge/Solved-1%2F1000-blue)](#progress)
+[![Languages](https://img.shields.io/badge/Languages-Python%20%7C%20C++%20%7C%20Julia-green)](#repository-structure)
+[![License](https://img.shields.io/badge/License-MIT-success)](#license)
 
----
+A scholarly, code-driven archive of Project Euler solutions. This repository unifies:
+- Implementations (multiple languages),
+- Mathematical analysis (LaTeX-ready structure),
+- Visual analytics (a 1–1000 grid heatmap and a live progress table).
 
-## 🧮 Mục tiêu
-Kho lưu trữ toàn diện các lời giải **Project Euler**, kết hợp:
-- Giải pháp bằng code
-- Phân tích toán học bằng LaTeX
-- Biểu đồ trực quan tiến độ
+> Index of problems: https://projecteuler.net/archives
 
 ---
 
-## 📊 Tiến trình
+## Repository Structure
+
+
+- **metadata/problems.csv** columns:
+  - `id,title,difficulty,status,languages,answer,date_solved,field,tags`
+  - `status` ∈ { `solved`, `in_progress`, `todo` }
+  - Set `languages` like `"python,cpp"` if multiple implementations exist.
+
+---
+
+## Progress
+
+The table below is **auto-generated** from `metadata/problems.csv`.  
+Each problem ID links directly to its Project Euler page.
+
 <!-- PROGRESS_TABLE_START -->
-| # | Title | Difficulty | Language | Status |
-|---|--------|------------|----------|--------|
+| # | Title | Difficulty | Languages | Status |
+|---:|---|---|---|:---:|
 | [1](https://projecteuler.net/problem=1) | Multiples of 3 and 5 | Easy | python | ✅ |
 | [2](https://projecteuler.net/problem=2) | Even Fibonacci numbers | Easy |  | ⬜ |
 | [3](https://projecteuler.net/problem=3) | Largest prime factor | Medium |  | ⬜ |
 <!-- PROGRESS_TABLE_END -->
 
----
-
-## 🗺️ Heatmap
-![Heatmap](visualizations/heatmap.png)
+Legend: ✅ solved · ⏳ in progress · ⬜ todo
 
 ---
 
-## 🔗 Links
-- [Project Euler Website](https://projecteuler.net/archives)
-# ?? Project Euler Mathematical Compendium 
+## Heatmap (1–1000)
+
+The heatmap is a single 40×25 board (1–1000).  
+- Orange = solved  
+- Blue = in progress  
+- Gray = todo
+
+![Project Euler Heatmap](visualizations/heatmap.png)
+
+---
+
+## How to Update Locally
+
+1) Edit `metadata/problems.csv` and add/update rows.  
+2) Regenerate artifacts:
+```bash
+python scripts\update_readme.py
+python scripts\gen_heatmap.py
